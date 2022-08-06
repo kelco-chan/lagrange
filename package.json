@@ -1,0 +1,25 @@
+{
+  "name": "langrange",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\"",
+    "register": "tsc && node ./dist/Bot/scripts/register"
+  },
+  "devDependencies": {
+    "@azure/functions": "^3.2.0",
+    "@types/node": "16.x",
+    "discord-api-types": "^0.37.1",
+    "express": "^4.18.1",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^1.1.0",
+    "discord-interactions": "^3.2.0",
+    "dotenv": "^16.0.1"
+  }
+}
